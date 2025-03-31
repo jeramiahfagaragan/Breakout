@@ -24,6 +24,7 @@ public class GameHandler extends ApplicationAdapter {
         engine.addSystem(new RenderSystem());
         engine.addSystem(new InputSystem());
         engine.addSystem(new CollisionSystem());
+
         EntityFactory entityFactory = new EntityFactory();
         engine.addEntity(entityFactory.createPaddleEntity());
         engine.addEntity(entityFactory.createBallEntity());

@@ -25,7 +25,7 @@ public class EntityFactory {
         paddle.add(sizeComponent);
 
         SpeedComponent speedComponent = new SpeedComponent();
-        speedComponent.speed = 200;
+        speedComponent.speed = 500;
         paddle.add(speedComponent);
 
         paddle.add(new RenderComponent());
@@ -60,7 +60,7 @@ public class EntityFactory {
 
         RenderComponent renderComponent = new RenderComponent();
         renderComponent.shape = RenderComponent.ShapeKind.CIRCLE;
-        ball.add(new RenderComponent());
+        ball.add(renderComponent);
 
         return ball;
     }
